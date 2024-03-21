@@ -39,21 +39,23 @@ website:
 
   navbar:
     pinned: true
-    background: "#00788d"
+    background: "#069393"
     right:
       - syllabus.qmd
       - schedule.qmd
       - text: "Clases"
         file: class/index.qmd
       - text: "Prácticos"
-        file: assignment/index.qmd
+        file: content/index.qmd
+#      - text: "Assignments"
+#        file: assignment/index.qmd
+#      - text: "Examples"
+#        file: example/index.qmd
       - trabajos.qmd
       - text: "Recursos"
         file: resource/index.qmd
-      - icon: cloud-fill
-        href: "https://rstudio.cloud"
-        aria-label: RStudio.cloud
-
+      - text: "RStudio Cloud"
+        href: "https://login.rstudio.cloud/login?redirect=%2F"
 
   sidebar:
     - title: "Clases"
@@ -90,25 +92,25 @@ website:
       contents:
         - section: "Información general"
           contents:
-            - assignment/index.qmd
+            - content/index.qmd
         - section: "Sesiones"
           contents:
             - text: "1: Introducción al lenguaje R"
-              file: assignment/01-practico.qmd
+              file: content/01-content.qmd
             - text: "2: Conocimientos básicos de programación en R"
-              file: assignment/02-practico.qmd
+              file: content/02-content.qmd
             - text: "3: Procesamiento, limpieza y manipulación de datos en R"
-              file: assignment/03-practico.qmd
+              file: content/03-content.qmd
             - text: "4: Análisis descriptivo de datos en R"
-              file: assignment/04-practico.qmd
+              file: content/04-content.qmd
             - text: "5: Procesamiento y análisis de datos en R"
-              file: assignment/05-practico.qmd
+              file: content/05-content.qmd
             - text: "6: Visualización de datos con R"
-              file: assignment/06-practico.qmd
+              file: content/06-content.qmd
             - text: "7: Forma de una distribución"
-              file: assignment/07-practico.qmd
+              file: content/07-content.qmd
             - text: "8: Inferencia estadística univariada"
-              file: assignment/08-practico.qmd
+              file: content/08-content.qmd
 
     - title: "Recursos"
       style: "docked"
@@ -132,7 +134,7 @@ website:
 
   page-footer:
     left: |
-      Content {{< fa brands creative-commons >}} {{< var course.copyright_year >}} by Andreas Laffert <br>
+      Content {{< fa brands creative-commons >}} {{< var course.copyright_year >}} by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}) <br>
       All content licensed under a {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
       [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)

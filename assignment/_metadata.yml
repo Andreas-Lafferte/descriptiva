@@ -1,6 +1,6 @@
 date-heading:
-  content: "Sesión del "
-  class: "bg-content"
+  content: "Due by 11:59 PM on"
+  class: "bg-assignment"
 date-format: "full"
 
 format:
